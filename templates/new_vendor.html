@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Vendor | farmerce</title>
+</head>
+<body>
+
+<form method="POST" action="/">
+    {{form.csrf_token}}
+    {{form.name.label}} {{form.name}}
+    {{form.description.label}} {{form.description}}
+    {{form.price.label}} {{form.price}}
+    {{ form.organic.label }} {{ form.organic }}
+    {{ form.methods.label }} {{ form.methods}}
+    {{ form.chemical.label }} {{ form.chemical}}
+    {{ form.usda.label }} {{ form.usda }}
+    {{ form.contact.label }} {{form.contact}}
+    {{ form.produce.label }} {{form.produce}}
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
