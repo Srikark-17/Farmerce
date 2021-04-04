@@ -11,4 +11,5 @@ class CreateVendorForm(FlaskForm):
     chemical = SelectField('Do you use chemicals?', choices=['Yes', 'No'], validators=[InputRequired()])
     usda = SelectField('Have you received USDA approval?', choices=['Yes', 'No'], validators=[InputRequired()])
     contact = StringField('Contact Information', validators=[InputRequired()])
+    produce = StringField('Items Available', validators=[InputRequired()])
 
