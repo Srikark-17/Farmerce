@@ -54,7 +54,7 @@ def allowed_image_filesize(filesize):
         return False
 
 
-@app.route("/upload-image", methods=["GET", "POST"])
+@app.route("/upload_image", methods=["GET", "POST"])
 def upload_image():
 
     if request.method == "POST":
