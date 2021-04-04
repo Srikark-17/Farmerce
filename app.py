@@ -13,7 +13,7 @@ def render_farmerpage():
     return render_template('individualfarmer.html')
 
 
-@app.route('/farmer')
+@app.route('/detectdisease')
 def render_diseasedetectpage():
     return render_template('diseasedetection.html')
 
