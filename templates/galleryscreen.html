@@ -42,7 +42,8 @@ background-size: cover; height: 100vh;
 }
 
 div.desc {
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: left;
 }
 
@@ -53,7 +54,7 @@ div.desc {
 .responsive {
   padding: 0 6px;
   float: left;
-  width: 20%;
+  width: 15%;
   margin: 8px;
 }
 
@@ -86,7 +87,7 @@ div.desc {
 <div class="container">
     <h2 style="color: #fff; font-size: 40px; font-family: 'DM Sans', sans-serif;">Local Farmers in Your Area</h2>
     <h4 style="color: #fff; font-size: 25px; font-family: 'DM Sans', sans-serif;">Look at the farmers near you! Click to find out more details!</h4>
-<div style="margin-left: 16vw;">
+<div style="margin-left: 6vw;">
 {%for i in data%}
 
 <div class="responsive">
@@ -95,10 +96,10 @@ div.desc {
         <img src="static/corn.jpg"width="400" height="400">
       </a>
       <div class="desc">
-          <p style="font-size:xx-large;">{{i['name']}}</p>
-          <p style="font-size:large;">Organic: {{i['is_organic']}}</p>
-          <p style="font-size:large;">Chemicals: {{i['is_chemical']}}</p>
-          <p style="font-size:large;">Expensive: {{i['price']}}</p>
+          <p style="font-size: 25px; font-weight: bold;font-family: 'DM Sans', sans-serif;">{{i['name']}}</p>
+          <p style="font-size:large; font-family: 'DM Sans', sans-serif;">Organic: {{i['is_organic']}}</p>
+          <p style="font-size:large; font-family: 'DM Sans', sans-serif;">Chemicals: {{i['is_chemical']}}</p>
+          <p style="font-size:large; font-family: 'DM Sans', sans-serif;">Expensive: {{i['price']}}</p>
       </div>
     </div>
   </div>
