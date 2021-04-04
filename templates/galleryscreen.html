@@ -2,13 +2,16 @@
 <html>
 <head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Josefin+Sans:wght@300&display=swap');
+</style>
+<style>
 div.gallery {
-  border: 1px solid #ccc;
+  border: 3px solid #ccc;
   background-color: #fff;
 }
 
 div.gallery:hover {
-  border: 1px solid rgb(40, 170, 8);
+  border: 3px solid rgb(40, 170, 8);
 }
 
 div.gallery img {
@@ -49,8 +52,8 @@ div.desc {
 .responsive {
   padding: 0 6px;
   float: left;
-  width: 32.5%;
-  margin: 5px;
+  width: 20%;
+  margin: 8px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -80,10 +83,9 @@ div.desc {
 <body style="margin: 0;">
 <div class="backroundimage"">
 <div class="container">
-    <h2 style="color: #fff; font-size: 40px;">Local Farmers in Your Area</h2>
-    <h4 style="color: #fff; font-size: 25px;">Look at the farmers near you! Click to find out more details!</h4>
-<div>
-
+    <h2 style="color: #fff; font-size: 40px; font-family: 'DM Sans', sans-serif;">Local Farmers in Your Area</h2>
+    <h4 style="color: #fff; font-size: 25px; font-family: 'DM Sans', sans-serif;">Look at the farmers near you! Click to find out more details!</h4>
+<div style="margin-left: 16vw;">
 {%for i in data%}
 
 <div class="responsive">
