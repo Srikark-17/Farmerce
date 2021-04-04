@@ -16,6 +16,27 @@ div.gallery img {
   height: auto;
 }
 
+.backroundimage {
+    background-image: url(static/market.jpg); background-blend-mode: multiply;
+background-color: rgba(0, 0, 0, 0.4);
+background-size: cover; height: 100vh;
+/* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
 div.desc {
   padding: 15px;
   text-align: left;
@@ -57,25 +78,7 @@ div.desc {
 </style>
 </head>
 <body style="margin: 0;">
-<div style="background-image: url(static/market.jpg); background-blend-mode: multiply;
-background-color: rgba(0, 0, 0, 0.4);
-background-size: cover; height: 100vh;
-/* Full height */
-  height: 100%; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-">
+<div class="backroundimage"">
 <div class="container">
     <h2 style="color: #fff; font-size: 40px;">Local Farmers in Your Area</h2>
     <h4 style="color: #fff; font-size: 25px;">Look at the farmers near you! Click to find out more details!</h4>
