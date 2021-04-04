@@ -16,6 +16,63 @@
             justify-content: center;
             flex-direction: column;
             height: 100vh;
+            background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-green-vegetable-background-material-image_140938.jpg");
+            background-blend-mode: multiply;
+            background-color: rgba(0, 0, 0, 0.4);
+            background-size: cover;
+        }
+        .farmer_info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .farmer_info > img {
+            height: 175px;
+            width: 175px;
+            border-radius: 87px;
+            margin-bottom: 5px;
+        }
+        .farmer_info > h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 20px;
+            color: #42210D;
+            margin-bottom: 20px;
+        }
+        .questions_answers {
+            display: flex;
+            flex-direction: column;
+        }
+        .question {
+            font-family: 'DM Sans', sans-serif;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .question > span {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 18px;
+            color: lightgreen;
+        }
+        .info_wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 35vw;
+        }
+        .items_avail {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 10vw;
+        }
+        .title {
+            font-family: 'DM Sans', sans-serif;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .item {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 18px;
+            color: lightgreen;
         }
     </style>
 </head>
@@ -25,16 +82,21 @@
             <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80" alt="Profile Pic">
             <h3>Farmer Joe</h3>
         </div>
-        <div class="questions_answers">
-            <span>Business Name <span>test</span></span>
-            <span>Business Name <span>test</span></span>
-            <span>Items Available <span>test</span></span>
-            <span>How expensie are your goods? <span>$$</span></span>
-            <span>Is your produce organic? <span>Somewhat</span></span>
-            <span>What are your methods of farming? <span>Unsustainable</span></span>
-            <span>Do you use chemicals? <span>No</span></span>
-            <span>Have you received USDA approval <span>Yes</span></span>
-            <span>Contact Info <span>comfarm@gmail.com</span></span>
+        <div class="info_wrapper">
+            <div class="questions_answers">
+                <span class="question">Business Name <span>test</span></span>
+                <span class="question">How expensie are your goods? <span>$$</span></span>
+                <span class="question">Is your produce organic? <span>Somewhat</span></span>
+                <span class="question">What are your methods of farming? <span>Unsustainable</span></span>
+                <span class="question">Do you use chemicals? <span>No</span></span>
+                <span class="question">Have you received USDA approval <span>Yes</span></span>
+                <span class="question">Contact Info <span>comfarm@gmail.com</span></span>       
+            </div>
+            <div class="items_avail">
+                <span class="title">Items Available</span>
+                <span class="item">Carrots</span>
+                <span class="item">Bok Choy</span>
+            </div>
         </div>
     </div>
 </body>
