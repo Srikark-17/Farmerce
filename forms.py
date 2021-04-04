@@ -14,4 +14,5 @@ class CreateVendorForm(FlaskForm):
     usda = SelectField('Have you received USDA approval?', choices=['Yes', 'No', 'N/A'], validators=[InputRequired()])
     contact = StringField('Contact Information', validators=[InputRequired()])
     produce = StringField('Items Available', validators=[InputRequired()])
+    pic = StringField('Image Link', validators=[InputRequired()])
 
