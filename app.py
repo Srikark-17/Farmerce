@@ -21,7 +21,7 @@ def create_vendor():
 
         post = {'name': form.name.data, 'description': form.description.data, 'is_organic': form.organic.data,
                 'farming_method': form.methods.data, 'is_chemical': form.chemical.data, 'usda': form.usda.data,
-                'contact': form.contact.data}
+                'contact': form.contact.data, 'price': form.price.data, 'produce': form.produce.data}
 
         collection = db.vendors
         collection.insert_one(post)
