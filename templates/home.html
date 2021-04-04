@@ -5,14 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmerce</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Josefin+Sans:wght@300&display=swap');
+    </style>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("https://d39l2hkdp2esp1.cloudfront.net/img/photo/161726/161726_00_2x.jpg");
+            flex-direction: column;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.4);
+            background-blend-mode: multiply;
+            background-size: cover;
+        }
+
+        .container > p {
+            width: 25vw;
+            text-align: center;
+            color: #C6B299;
+            font-size: 16px;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .home-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            width: 15vw;
+            height: 5vh;
+            color: #fff;
+            cursor: pointer;
+            background-color: red;
+        }
+        
+        .home-button > p {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 18px;
+        }
+    </style>
 </head>
-<body>
-    <img src="static/farmerceLogo.png" alt="Farmerce Logo">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequatur autem, a tempore nobis optio ipsum! Dolorem molestiae vitae earum, repellat dicta voluptates quidem autem.</p>
-    <a href="#">
-        <div class="home-button">
-            <p>Get started</p>
-        </div>
-    </a>
+<body style="margin: 0;">
+    <div class="container">
+        <img src="static/farmerceLogo.png" alt="Farmerce Logo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequatur autem, a tempore nobis optio ipsum! Dolorem molestiae vitae earum, repellat dicta voluptates quidem autem.</p>
+        <a href="#" style="text-decoration: none;">
+            <div class="home-button">
+                <p>Get Started</p>
+            </div>
+        </a>
+    </div>
 </body>
 </html>
