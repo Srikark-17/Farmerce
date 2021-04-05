@@ -42,7 +42,7 @@ background-size: cover; height: 100vh;
 }
 
 div.desc {
-  padding: 15px;
+  padding-left: 15px;
   text-align: left;
 }
 
@@ -84,27 +84,28 @@ div.desc {
 <body style="margin: 0;">
 <div class="backroundimage">
 <div class="container">
-    <h2 style="color: #fff; font-size: 40px; font-family: 'DM Sans', sans-serif;">Local Farmers in Your Area</h2>
-    <h4 style="color: #fff; font-size: 25px; font-family: 'DM Sans', sans-serif;">Look at the farmers near you! Click to find out more details!</h4>
+    <h2 style="color: #fff; font-size: 40px; font-family: 'DM Sans', sans-serif;">Local Vendors </h2>
+    <h4 style="color: #fff; font-size: 25px; font-family: 'DM Sans', sans-serif;">Look at the Vendors near you! Click to find out more details!</h4>
 <div style="margin-left: 16vw;">
 {%for i in data%}
 
 <div class="responsive">
     <div class="gallery">
       <a target="_blank" href="static/corn.jpg">
-        <img src="static/corn.jpg"width="400" height="400">
+        <img src="{{i['pic']}}"width="400" height="400">
       </a>
       <div class="desc">
-          <a href="/view/{{i['id']}}"><p style="font-size:xx-large;">{{i['name']}}</p></a>
+          <a href="/view/{{i['id']}}" style="text-decoration:none;"><p style="font-size:xx-large;">{{i['name']}}</p></a>
           <p style="font-size:large;">Organic: {{i['is_organic']}}</p>
           <p style="font-size:large;">Chemicals: {{i['is_chemical']}}</p>
           <p style="font-size:large;">Expensive: {{i['price']}}</p>
       </div>
     </div>
   </div>
-</div>
+
 {%endfor%}
 <div class="clearfix"></div>
 </div>
+
 </body>
 </html>
