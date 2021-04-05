@@ -201,7 +201,7 @@
 </head>
 <body>
 <div class="testbox">
-    <form method="POST" action="/">
+    <form method="POST" action="{{url_for('create_vendor')}}">
 
         <div class="banner">
             <h1>New Vendor Form</h1>
@@ -252,6 +252,10 @@
         <div class="item">
 
             {{ form.contact.label }} {{form.contact}}
+        </div>
+        <div class="item">
+
+            {{ form.pic.label }} {{form.pic}}
         </div>
 
         <div class="btn-">
