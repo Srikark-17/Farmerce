@@ -1,0 +1,48 @@
+<link rel="icon" type="image/png" href="static/favicon.ico">
+<title>Disease Detection | Farmerce</title>
+<style>
+    .container {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sendResult {
+        width: 7vw;
+        height: 4vh;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: lightgreen;
+        color:  white;
+        font-family: 'DM Sans', sans-serif;
+        border: none;
+        outline: none;
+        margin-top: 5px;
+    }
+
+    .results {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 20px;
+    }
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Josefin+Sans:wght@300&display=swap');
+</style>
+<div class="container">
+    <div>
+        <h2 style="text-align: center; font-size: 40px; font-family: 'DM Sans', sans-serif;">Plant Disease Detection</h2>
+        <h4 style="text-align: center; font-size: 25px; font-family: 'DM Sans', sans-serif;">Upload a file of the plant to find out if there's a disease!</h4>
+        <form action="/upload-image" method="POST" enctype="multipart/form-data">
+            <div style="position: relative;">
+                <input type="file" name="image" id="image" />
+            </div>
+            <button class="sendResult" type="submit">Send for results</button>
+        </form>
+        <h3 class="results">Results</h3>
+        <p style="font-family: 'DM Sans', sans-serif; font-size: 16px;">97% sure there's a disease</p>
+    </div>
+</div>
